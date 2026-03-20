@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --secondary: #757d85;
+  --primary: #0a65fc;
+  --main-900: #0a0d14;
+  --sub-500: #525866;
+  --soft-200: #e2e4e9;
+  --soft-400: #868c98;
+  --weak-100: #f6f8fa;
+  --ghost-white: #f9faff;
+  --alice-blue: #f7f8f9;
+  --gray-blue: #f1f2f3;
+  --red-base: #df1c41;
+  
+  /* Custom colors for headings and text */
+  --heading-color: #102952;
+  --text-color: #757d85;
+}
+
+/* Default text styling */
+body {
+  color: var(--text-color);
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bricolage);
+  color: var(--heading-color);
+}
+
+/* Ensure paragraphs and other elements use DM Sans and text color */
+div, li, td, th, label, input, textarea, select {
+  font-family: var(--font-dm-sans);
+  color: var(--text-color);
+}
+
+/* Paragraphs should inherit font but allow color to be overridden */
+p {
+  font-family: var(--font-dm-sans);
+}
+
+/* Links should inherit font but allow color to be overridden */
+a {
+  font-family: var(--font-dm-sans);
+}
+
+/* Spans should inherit color from their parent */
+span {
+  font-family: var(--font-dm-sans);
+}
